@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>KeyLogger</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            margin-top:50px;
+
+        }
+       
+      #state,#log{
+        height:50px;
+        width:500px;
+        padding:10px;
+        font-size:20px;
+        border:2px solid;
+        text-align:center;
+        margin-top:20px;
+        background-color: #ffa500;
+        border-radius:10px;
+      }
+
+      .btn-class{
+        display:flex;
+        flex-direction:row;
+
+      }
+      
+      button{
+        font-size:20px;
+        padding:10px 20px;
+        margin-top:20px;
+        margin-right:20px;
+
+      }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="border:2px solid black;border-radius:10px;">Key Logger</h1>
+               <div class="btn-class">
+                  <button id="start-btn">Start Logging Keypresses</button>
+                  <button id="stop-btn">Stop Logging Keypresses</button>
+               </div>
+               <div class="btn-class">
+                <div id="log"></div>
+                <div id="state">
+
+                </div>
+               </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
